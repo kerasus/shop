@@ -1,17 +1,15 @@
 <template>
-  <q-page class="flex flex-center">
-    <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-vertical.svg"
-      style="width: 200px; height: 200px"
-    >
+  <q-page>
+    <category-collections-carousel />
   </q-page>
 </template>
 
 <script>
 import { defineComponent } from 'vue'
+import CategoryCollectionsCarousel from 'components/CategoryCollectionsCarousel'
 
 export default defineComponent({
-  name: 'PageIndex'
+  name: 'PageIndex',
+  components: { CategoryCollectionsCarousel }
 })
 </script>
